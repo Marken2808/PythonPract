@@ -2,6 +2,7 @@ import random
 import copy
 import matplotlib.pyplot as plt
 
+
 # Each individual should be represented by a data structure,
 # consisting of an array of binary genes and a fitness value
 class individual:
@@ -15,7 +16,7 @@ class individual:
 # and random gene length number of 50 and population of 50 
 P = 50
 N = 50
-GENERATIONS = 100 # initialise 100 generations
+GENERATIONS = 500 # initialise 100 generations
 
 # random mutation rate and mutation step
 MUTRATE = 0.03
@@ -259,8 +260,8 @@ meanFit_data4 = []
 # =============================================================
 
 # [----------------- UNCOMMENT THIS AND ALTER N TO TEST -----------------]
-N = 50
-plt.title("Maximisation GA \n Touranment and Roulette Wheel Selection \n" 
+# N = 50
+plt.title("Maximisation GA \n Touranment and Roulette Wheel Selection \n"
             + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
 
 # initialise original population
@@ -298,12 +299,12 @@ plt.plot(maxFit_data2, label="Roulette Wheel")
 # [----------------- UNCOMMENT THIS TO TEST -----------------]
 # plt.title("Maximisation GA - Touranment Selection \n"
 #             + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
-
+#
 # # initialise original population
 # population = initialise_population()
-
+#
 # maxFit_data1, meanFit_data1 = GA(population, touranment_selection, 0.03, 0.9)
-
+#
 # plt.plot(maxFit_data1, label="Max Fitness")
 # plt.plot(meanFit_data1, label="Mean Fitness")
 # [----------------- UNCOMMENT THIS TO TEST -----------------]

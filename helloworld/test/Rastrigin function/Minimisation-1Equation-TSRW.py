@@ -32,7 +32,7 @@ def mini_function(ind):
     fitness = 0
     squared = 0
     cosin = 0
-    for i in range(0, N):
+    for i in range(1, N):
         squared = ind.gene[i] * ind.gene[i]  # x^2
         cosin = 10 * math.cos(ind.gene[i] * (2 * math.pi))  # 10.cos(2.pi.x)
         fitness += squared - cosin  # x^2 - 10.cos(2.pi.x)
@@ -295,19 +295,19 @@ meanFit_data4 = []
 # =============================================================
 
 # [----------------- UNCOMMENT THIS AND ALTER N TO TEST -----------------]
-N = 10
-GENERATIONS = 150
-plt.title("Minimisation GA \n Touranment and Roulette Wheel Selection \n"
-          + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
-
-# initialise original population
-population = initialise_population()
-
-minFit_data1, meanFit_data1 = GA(population, touranment_selection, 0.03, 1.0)
-minFit_data2, meanFit_data2 = GA(population, RW_selection, 0.03, 1.0)
-
-plt.plot(minFit_data1, label="Touranment")
-plt.plot(minFit_data2, label="Roulette Wheel")
+# N = 10
+# GENERATIONS = 150
+# plt.title("Minimisation GA \n Touranment and Roulette Wheel Selection \n"
+#           + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
+#
+# # initialise original population
+# population = initialise_population()
+#
+# minFit_data1, meanFit_data1 = GA(population, touranment_selection, 0.03, 1.0)
+# minFit_data2, meanFit_data2 = GA(population, RW_selection, 0.03, 1.0)
+#
+# plt.plot(minFit_data1, label="Touranment")
+# plt.plot(minFit_data2, label="Roulette Wheel")
 # [----------------- UNCOMMENT THIS AND ALTER N TO TEST -----------------]
 
 # N = 10
@@ -332,16 +332,16 @@ plt.plot(minFit_data2, label="Roulette Wheel")
 
 # Best Fitness and Mean Fitness of TS
 # [----------------- UNCOMMENT THIS TO TEST -----------------]
-# plt.title("Minimisation GA - Touranment Selection \n"
-#             + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
+plt.title("Minimisation GA - Touranment Selection \n"
+            + "N = " + str(N) + " MUTRATE = " + str(MUTRATE) + " MUTSTEP = " + str(MUTSTEP))
 
-# # initialise original population
-# population = initialise_population()
+# initialise original population
+population = initialise_population()
 
-# minFit_data1, meanFit_data1 = GA(population, touranment_selection, 0.03, 1.0)
+minFit_data1, meanFit_data1 = GA(population, touranment_selection, 0.03, 1.0)
 
-# plt.plot(minFit_data1, label="Min Fitness")
-# plt.plot(meanFit_data1, label="Mean Fitness")
+plt.plot(minFit_data1, label="Min Fitness")
+plt.plot(meanFit_data1, label="Mean Fitness")
 # [----------------- UNCOMMENT THIS TO TEST -----------------]
 # N = 10
 # MUTRATE = 0.03

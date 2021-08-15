@@ -1,0 +1,49 @@
+INTRODUCTION
+
+there are 2 file, open in IDE support python language:
+the main.py file is the main file
+the MKF.py file is where functions are
+-> run main.py file
+################################################################################
+first of all, it will print the main_menu
+MAIN MENU:
+1. LOAD ALL DATA	(see all list animal data provided)
+2. ADD NEW RECORD	(add animal after that optional for treatment following)
+3. EDIT DATA		(edit all details)
+4. PRODUCE LIST		(print list of task 2 asking)
+0. EXIT
+################################################################################
+
+these menu below are submenu, press anykey will go back main menu
+
+ADD MENU:
+1. ADD NEW ENTRY	(ASK FOR PET OR WILD)
+2. ADD NEW PET		(ONLY PET)
+3. ADD NEW WILD		(ONLY WILD ANIMAL)
+
+EDIT MENU:
+1. Edit ID Animal		(auto edit treatment if added before)
+2. Edit Type Animal		
+3. Edit Animal Breed
+4. Edit Vaccinated
+5. Edit Neutered
+6. Edit Mircochip number
+7. Edit Reason for admission
+8. Edit Arrival date
+9. Edit  Departure date
+10. Edit Destination
+11. Edit Address
+12. Edit Surgery
+13. Edit Surgery date
+14. Edit Medication
+15. Edit Medication start
+16. Edit Medication finish
+17. Edit list of people for abusing
+18. Edit list of people for abandoning
+
+PRODUCE MENU:
+1. produce list people abused animal
+2. produce list people abandoned animal
+3. produce list cat ready for adoption
+4. produce list dog ready for adoption
+5. produce list animal ready return their owners
